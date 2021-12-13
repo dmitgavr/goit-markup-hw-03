@@ -11,14 +11,33 @@ body {
   color: var(--head-color);
 }
 
-/* Проверочный контейнер */
-.container {
-  margin-left: auto;
-  margin-right: auto ;
-  /* height: 100px; */
-  width: 1440px;
-  /* outline: 2px solid tomato; */
+/* Сброс глобальных стилей */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+} 
+
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
 }
+
+.container {
+  outline: 2px solid tomato;
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
 
 /* HEADER */
 .logo {
@@ -29,6 +48,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .logo > span {
@@ -36,11 +56,32 @@ body {
   
 }
 
-.header-list,
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .site-contacts {
   display: flex;
-  padding: 10px;
-  /* justify-content: space-between */
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item + .header-item {
+  margin-left: 50px;
 }
 
 .header-iteam-link {
@@ -61,8 +102,12 @@ body {
   color: var(--text-color);
 }
 
+/* Герой */
 .hero {
   background-color: var(--background-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -72,6 +117,9 @@ body {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .hero-button {
@@ -85,20 +133,51 @@ body {
   cursor: pointer;
 }
 
-.exellence-title {
+/* .hero-container {
+  margin-top: 200px;
+} */
+
+
+/* Преимущества */
+
+.excellence-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.excellence-iteam {
+  /* margin-right: 30px; */
+  width: 270px;
+}
+
+/* .excellence-iteam:last-child {
+  margin-right: 0;
+} */
+
+.excellence-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  
 }
 
-.exellence-text {
+.excellence-text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 714;
   letter-spacing: 0.03em;
+}
+
+
+
+
+.case-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .case-title,
@@ -109,6 +188,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Команда */
 .command {
   background-color: #f5f4fa;
 }
@@ -128,8 +208,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Футер */
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
