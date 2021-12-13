@@ -17,7 +17,7 @@ body {
   margin-right: auto ;
   /* height: 100px; */
   width: 1440px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* HEADER */
@@ -36,9 +36,11 @@ body {
   
 }
 
-.header-nav {
+.header-list,
+.site-contacts {
   display: flex;
-  justify-content: space-between;
+  padding: 10px;
+  /* justify-content: space-between */
 }
 
 .header-iteam-link {
