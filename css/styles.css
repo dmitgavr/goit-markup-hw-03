@@ -11,9 +11,16 @@ body {
   color: var(--head-color);
 }
 
+/* Проверочный контейнер */
+.container {
+  margin-left: auto;
+  margin-right: auto ;
+  /* height: 100px; */
+  width: 1440px;
+  outline: 2px solid tomato;
+}
+
 /* HEADER */
-
-
 .logo {
   font-family: "Raleway", sans-serif;
   color: #000000;
